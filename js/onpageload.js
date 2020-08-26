@@ -174,6 +174,7 @@ function getUserData(langnum) {
 
         $("#firstrow").show();
         $("#thirdrow").show();
+        $("#registerbtn").hide();
 
         var regDate = data.form_date;
         // spliting reg date and time
