@@ -225,6 +225,11 @@ function getUserData(langnum) {
             "ඔබගේ ලියාපදිංචිය තහවුරු බව සතුටින් දන්වා සිටිමු. ගුවන්ගත වීමේ ක්‍රියාවලිය සඳහා අප තානාපති කාර්යාල නිලධාරියකු හැකි ඉක්මනින් ඔබව අමතනු ඇත. ස්තුතියි!"
           );
           $("#passportLabel").text("ඔබගේ ගමන් බලපත්‍ර අංකය");
+
+          $("#firstnmelbl").text("ඔබගේ මුල් නම");
+          $("#lastnmelbl").text("ඔබගේ අග නම  ");
+          $("#regdtelbl").text(" ඔබ ලියාපදිංචි දිනය");
+          $("#regtimelbl").text("ලියාපදිංචි වේලාව");
         });
         $("#englishemb").click(function () {
           // $("#embnm").html("<h1>Embassy of Sri Lanka</h1>");
@@ -234,6 +239,11 @@ function getUserData(langnum) {
             "We are pleased to announce that your registration has been confirmed.An embassy official will contact you soon upon receipt of confirmation of flight schedules.Thank you!"
           );
           $("#passportLabel").text("Your Passport Number");
+
+          $("#firstnmelbl").text("First Name");
+          $("#lastnmelbl").text("Surname");
+          $("#regdtelbl").text("Registation Date");
+          $("#regtimelbl").text("Registation Time");
         });
         $("#tamilemb").click(function () {
           //     $("#embnm").html("<h1> இலங்கை தூதரகம் </h1>");
@@ -244,6 +254,11 @@ function getUserData(langnum) {
           );
 
           $("#passportLabel").text("உங்கள் பாஸ்போர்ட் எண்");
+
+          $("#firstnmelbl").text("முதல் பெயர்");
+          $("#lastnmelbl").text("குடும்ப பெயர்");
+          $("#regdtelbl").text("பதிவு தேதி");
+          $("#regtimelbl").text("பதிவு நேரம்");
         });
       }
     },
