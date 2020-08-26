@@ -103,6 +103,11 @@ function getUserData(langnum) {
         $("#registerbtn").show();
         $("#getDataButton").hide();
 
+        // hide the req firlds
+
+        $("#firstrow").hide();
+        $("#thirdrow").hide();
+
         $("#passportNO").change(function () {
           $("#getDataButton").show();
         });
@@ -188,14 +193,28 @@ function getUserData(langnum) {
           $("#statusmsg").text(
             "ඔබගේ ලියාපදිංචිය තහවුරු බව සතුටින් දන්වා සිටිමු. ගුවන්ගත වීමේ ක්‍රියාවලිය සඳහා අප තානාපති කාර්යාල නිලධාරියකු හැකි ඉක්මනින් ඔබව අමතනු ඇත. ස්තුතියි!"
           );
+          $("#firstnmelbl").text("ඔබගේ මුල් නම");
+          $("#lastnmelbl").text("ඔබගේ අග නම  ");
+          $("#regdtelbl").text(" ඔබ ලියාපදිංචි දිනය");
+          $("#regtimelbl").text("ලියාපදිංචි වේලාව");
         } else if (langnum == 1) {
           $("#statusmsg").text(
             "We are pleased to announce that your registration has been confirmed.An embassy official will contact you soon upon receipt of confirmation of flight schedules.Thank you!"
           );
+
+          $("#firstnmelbl").text("First Name");
+          $("#lastnmelbl").text("Surname");
+          $("#regdtelbl").text("Registation Date");
+          $("#regtimelbl").text("Registation Time");
         } else if (langnum == 2) {
           $("#statusmsg").val(
             "உங்கள் பதிவு உறுதிப்படுத்தப்பட்டுள்ளதாக அறிவிப்பதில் நாங்கள் மகிழ்ச்சியடைகிறோம்.விமான அட்டவணைகளை உறுதிப்படுத்தியவுடன் தூதரக அதிகாரி ஒருவர் விரைவில் உங்களைத் தொடர்புகொள்வார்."
           );
+
+          $("#firstnmelbl").text("முதல் பெயர்");
+          $("#lastnmelbl").text("குடும்ப பெயர்");
+          $("#regdtelbl").text("பதிவு தேதி");
+          $("#regtimelbl").text("பதிவு நேரம்");
         }
 
         $("#sinhalaemb").click(function () {

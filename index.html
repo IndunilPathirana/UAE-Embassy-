@@ -48,33 +48,39 @@
           </p>
 
           <div class="form-left-last">
-            <input
-              type="button"
-              id="sinhalaemb"
-              name="account"
-              class="account"
-              value="සිංහල"
-            />
+            <a href="#passportNO">
+              <input
+                type="button"
+                id="sinhalaemb"
+                name="account"
+                class="account"
+                value="සිංහල"
+              />
+            </a>
           </div>
 
           <div class="form-left-last">
-            <input
-              type="button"
-              id="englishemb"
-              name="account"
-              class="account"
-              value="English"
-            />
+            <a href="#passportNO">
+              <input
+                type="button"
+                id="englishemb"
+                name="account"
+                class="account"
+                value="English"
+              />
+            </a>
           </div>
 
           <div class="form-left-last">
-            <input
-              type="button"
-              id="tamilemb"
-              name="account"
-              class="account"
-              value="தமிழ்"
-            />
+            <a href="#passportNO">
+              <input
+                type="button"
+                id="tamilemb"
+                name="account"
+                class="account"
+                value="தமிழ்"
+              />
+            </a>
           </div>
         </div>
         <form class="form-detail" action="#" method="post" id="myform">
@@ -94,44 +100,48 @@
           </div>
           <div class="form-group" id="firstrow">
             <div class="form-row form-row-1">
-              <label for="first_name">First Name</label>
+              <label id="firstnmelbl" for="first_name">First Name</label>
               <input
                 type="text"
                 name="first_name"
                 id="first_name"
                 class="input-text"
+                disabled
               />
             </div>
             <div class="form-row form-row-1">
-              <label for="last_name">Last Name</label>
+              <label id="lastnmelbl" for="last_name">Last Name</label>
               <input
                 type="text"
                 name="last_name"
                 id="last_name"
                 class="input-text"
+                disabled
               />
             </div>
           </div>
 
           <div class="form-group" id="thirdrow">
             <div class="form-row form-row-1">
-              <label for="RegDate">Registation Date</label>
+              <label id="regdtelbl" for="RegDate">Registation Date</label>
               <input
                 type="text"
                 name="RegDate"
                 id="reg_date"
                 class="input-text"
-                required
+                disabled
               />
             </div>
             <div class="form-row form-row-1">
-              <label for="comfirm-password">Registation Time</label>
+              <label id="regtimelbl" for="comfirm-password"
+                >Registation Time</label
+              >
               <input
                 type="text"
                 name="regTime"
                 id="reg_time"
                 class="input-text"
-                required
+                disabled
               />
             </div>
           </div>
@@ -142,18 +152,19 @@
             <input
               type="button"
               id="getDataButton"
-              name="register"
+              name="submit"
               class="register"
               value="Submit"
             />
-
-            <input
-              type="button"
-              id="registerbtn"
-              name="register"
-              class="register"
-              value="Register"
-            />
+            <a href="https://embassyofsrilankauae.com/data-analysis-form/"
+              ><input
+                type="button"
+                id="registerbtn"
+                name="register"
+                class="register"
+                value="Register"
+                style="background-color: #800000"
+            /></a>
           </div>
         </form>
       </div>
