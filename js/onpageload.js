@@ -5,6 +5,8 @@ $(document).ready(function () {
   $("#firstrow").hide();
   $("#thirdrow").hide();
   $("#registerbtn").hide();
+  $("#successicon").hide();
+  $("#unsuccessicon").hide();
 
   // lang button click
 
@@ -106,6 +108,9 @@ function getUserData(langnum) {
 
         // $("#Register").fadeIn("slow");
 
+        $("#successicon").hide();
+        $("#unsuccessicon").show();
+
         // show the registation btn
 
         $("#registerbtn").show();
@@ -180,6 +185,9 @@ function getUserData(langnum) {
       } else {
         // assign variables
 
+        $("#successicon").show();
+        $("#unsuccessicon").hide();
+
         $("#firstrow").show();
         $("#thirdrow").show();
         $("#registerbtn").hide();
@@ -200,7 +208,7 @@ function getUserData(langnum) {
 
         if (langnum == 0) {
           $("#statusmsg").text(
-            "ඔබගේ ලියාපදිංචිය තහවුරු බව සතුටින් දන්වා සිටිමු. ගුවන්ගත වීමේ ක්‍රියාවලිය සඳහා අප තානාපති කාර්යාල නිලධාරියකු හැකි ඉක්මනින් ඔබව අමතනු ඇත. ස්තුතියි!"
+            "ඔබගේ ලියාපදිංචිය තහවුරු කර ඇති බව සතුටින් දන්වා සිටිමු.ලියාපදිංචි ප්‍රමුඛත්ව අනුක්‍රමණිකාවන් සහ ගුවන්යානා සැපයීම් ලේඛනයන්ට අනුව, අප තානාපති කාර්යාල නිලධාරියකු හැකි ඉක්මනින් ඔබ හා සම්බන්ධ වනු ඇත. ස්තුතියි!"
           );
           $("#firstnmelbl").text("ඔබගේ මුල් නම");
           $("#lastnmelbl").text("ඔබගේ අග නම  ");
@@ -208,7 +216,7 @@ function getUserData(langnum) {
           $("#regtimelbl").text("ලියාපදිංචි වේලාව");
         } else if (langnum == 1) {
           $("#statusmsg").text(
-            "We are pleased to announce that your registration has been confirmed.An embassy official will contact you soon upon receipt of confirmation of flight schedules.Thank you!"
+            "We are pleased to announce that your registration has been confirmed. According to the priority based registration sequences and flights availability, an embassy official will contact you at the soonest. Thank you!"
           );
 
           $("#firstnmelbl").text("First Name");
@@ -217,7 +225,7 @@ function getUserData(langnum) {
           $("#regtimelbl").text("Registation Time");
         } else if (langnum == 2) {
           $("#statusmsg").val(
-            "உங்கள் பதிவு உறுதிப்படுத்தப்பட்டுள்ளதாக அறிவிப்பதில் நாங்கள் மகிழ்ச்சியடைகிறோம்.விமான அட்டவணைகளை உறுதிப்படுத்தியவுடன் தூதரக அதிகாரி ஒருவர் விரைவில் உங்களைத் தொடர்புகொள்வார்."
+            "உங்கள் பதிவு உறுதிப்படுத்தப்பட்டுள்ளதாக அறிவிப்பதில் நாங்கள் மகிழ்ச்சியடைகிறோம். முன்னுரிமை அடிப்படையிலான  பதிவுகள் மற்றும் விமானங்கள் கிடைப்பதன் அடிப்படையில், தூதரக அதிகாரி ஒருவர் விரைவில் உங்களைத் தொடர்புகொள்வார். நன்றி"
           );
 
           $("#firstnmelbl").text("முதல் பெயர்");
@@ -231,7 +239,7 @@ function getUserData(langnum) {
           $("#Reginfo").html(' <h2 class="title">ලියාපදිංචි තොරතුරු</h2>');
 
           $("#statusmsg").text(
-            "ඔබගේ ලියාපදිංචිය තහවුරු බව සතුටින් දන්වා සිටිමු. ගුවන්ගත වීමේ ක්‍රියාවලිය සඳහා අප තානාපති කාර්යාල නිලධාරියකු හැකි ඉක්මනින් ඔබව අමතනු ඇත. ස්තුතියි!"
+            "ඔබගේ ලියාපදිංචිය තහවුරු කර ඇති බව සතුටින් දන්වා සිටිමු.ලියාපදිංචි ප්‍රමුඛත්ව අනුක්‍රමණිකාවන් සහ ගුවන්යානා සැපයීම් ලේඛනයන්ට අනුව, අප තානාපති කාර්යාල නිලධාරියකු හැකි ඉක්මනින් ඔබ හා සම්බන්ධ වනු ඇත. ස්තුතියි!"
           );
           $("#passportLabel").text("ඔබගේ ගමන් බලපත්‍ර අංකය");
 
@@ -245,7 +253,7 @@ function getUserData(langnum) {
           $("#Reginfo").html(' <h2 class="title"> Registration Info</h2>');
 
           $("#statusmsg").text(
-            "We are pleased to announce that your registration has been confirmed.An embassy official will contact you soon upon receipt of confirmation of flight schedules.Thank you!"
+            "We are pleased to announce that your registration has been confirmed. According to the priority based registration sequences and flights availability, an embassy official will contact you at the soonest. Thank you!"
           );
           $("#passportLabel").text("Your Passport Number");
 
@@ -259,7 +267,7 @@ function getUserData(langnum) {
           $("#Reginfo").html(' <h2 class="title"> பதிவு தகவல்</h2>');
 
           $("#statusmsg").text(
-            "உங்கள் பதிவு உறுதிப்படுத்தப்பட்டுள்ளதாக அறிவிப்பதில் நாங்கள் மகிழ்ச்சியடைகிறோம்.விமான அட்டவணைகளை உறுதிப்படுத்தியவுடன் தூதரக அதிகாரி ஒருவர் விரைவில் உங்களைத் தொடர்புகொள்வார்."
+            "உங்கள் பதிவு உறுதிப்படுத்தப்பட்டுள்ளதாக அறிவிப்பதில் நாங்கள் மகிழ்ச்சியடைகிறோம். முன்னுரிமை அடிப்படையிலான  பதிவுகள் மற்றும் விமானங்கள் கிடைப்பதன் அடிப்படையில், தூதரக அதிகாரி ஒருவர் விரைவில் உங்களைத் தொடர்புகொள்வார். நன்றி"
           );
 
           $("#passportLabel").text("உங்கள் பாஸ்போர்ட் எண்");
