@@ -65,6 +65,14 @@ $(document).ready(function () {
       $("#passportLabel").text("உங்கள் பாஸ்போர்ட் எண்");
     }
   });
+
+  // Handler for .ready() called.
+  $("html, body").animate(
+    {
+      scrollTop: $("#pgeloadfn").offset().top,
+    },
+    "slow"
+  );
 });
 
 var rootURL =
